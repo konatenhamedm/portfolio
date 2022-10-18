@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="{{ asset('coming/img/Favicon.png') }}" type="image/x-icon">
+		<title>Konate Hamed</title>
+
+		<script type="text/javascript" src="{{ asset('coming/js/jquery.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('coming/js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('coming/js/timer.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('coming/js/script.js') }}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ asset('coming/css/bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('coming/css/bootstrap.min.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('coming/css/font-awesome.min.css') }}">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{{ asset('coming/css/custom.css') }}">
+	</head>
+
+
+	<body onload="countdown(year,month,day,hour,minute)">
+		<!-- Carousel -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		        <li data-target="#myCarousel" data-slide-to="1" ></li>
+		        <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+		    <div class="carousel-inner">
+		    	<div class= "container timer">
+		    		<div id="home" class= "logo text-center">
+		    			<h1>KNH</h1>
+		   			</div>
+			    	<div class= "row timer-circle">
+			    		<div class= "main-text text-center">
+			    			<h2 class="top-text">KNH - Je serai bientôt là avec mon nouveau site.</h2>
+			    			<h2 class="sub-text">Mon site est en maintenace</h2>
+			    		</div>
+			    		<div class="text-center">
+							<div class="numbers" id="count2"></div>
+						</div>
+						<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+							<div class= "circle text-center">
+								<div class= "row" id= "spacer1">
+									<div class= "title"></div>
+									<div class= "numbers" id= "dday"></div>
+								</div>
+								<div class= "row" id= "spacer2">
+									<div class= "title"></div>
+									<div class= "title" id= "days">Day</div>
+								</div>
+							</div>
+							<div class= "circle text-center">
+								<div class= "row" id= "spacer1">
+									<div class= "title"></div>
+									<div class= "numbers" id= "dhour"></div>
+								</div>
+								<div class= "row" id= "spacer2">
+									<div class= "title"></div>
+									<div class= "title" id= "hours">Hr</div>
+								</div>
+							</div>
+							<div class= "circle text-center">
+								<div class= "row" id= "spacer1">
+									<div class= "title"></div>
+									<div class= "numbers" id= "dmin"></div>
+								</div>
+								<div class= "row" id= "spacer2">
+									<div class= "title"></div>
+									<div class= "title" id= "minutes">Min</div>
+								</div>
+							</div>
+							<div class= "circle text-center">
+								<div class= "row" id= "spacer1">
+									<div class= "title"></div>
+									<div class= "numbers" id= "dsec"></div>
+								</div>
+								<div class= "row" id= "spacer2">
+									<div class= "title"></div>
+									<div class= "title" id= "seconds">Sec</div>
+								</div>
+							</div>
+						</div><!-- end of clock -->
+			    	</div><!-- end of timer-circle -->
+		    	</div><!-- end of timer -->
+			    	
+		        <div class="item active">
+		        	<img src="{{ asset('coming/img/summer.jpg') }}" alt="First slide">
+		        	
+					<div class= "carousel-caption caption">
+						<h1>Mon portfolio sera bientôt disponible en ligne.</h1>
+					</div>
+		        </div><!-- end of first item -->
+		        <div class="item">
+		          	<img src="{{ asset('coming/img/rainy_season.jpg') }}" alt="Second slide">
+		          	
+					<div class= "carousel-caption caption">
+						<h1>Mon portfolio sera bientôt disponible en ligne.</h1>
+					</div>
+		        </div><!-- end of second item -->
+		        <div class="item">
+			        <img src="{{ asset('coming/img/winter_season.jpg') }}" alt="Third slide">
+			        
+					<div class= "carousel-caption caption">
+						<h1>Mon portfolio sera bientôt disponible en ligne.</h1>
+					</div>        
+		        </div><!-- end of third item -->
+		    </div>
+		</div><!-- end of carousel -->
+
+		
+			<div class="container">
+				<div class="row text-center">
+					<div class="name col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+						<h1>KNH</h1>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-center">
+						<div class="copyright">
+							&copy; Droit d'auteur 2022 Knh.
+						</div>
+					</div>
+					
+				</div><!-- row -->
+			</div>
+		</div><!--end of footer -->
+	</body>
+</html>
